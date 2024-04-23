@@ -1,0 +1,11 @@
+def calculate_sum(a, b):
+    result = a + b
+    return result
+
+# Main program
+num1 = 10
+num2 = 5.5
+
+print("Calculating the sum of", num1, "and", num2)
+sum_result = calculate_sum(num1, num2)
+print("The sum is:", sum_result)

@@ -1,0 +1,113 @@
+Begin
+Main()
+{
+
+Int a,b=c:
+Int ar[]:
+Int arr[],arr[]:
+Int arr[]={'a','a','a'}:
+Int arr[][]={ {'a','a','a'} }:
+Int arr[]=New Int[12]:
+Int arr[][]= New Int[2][2]:
+
+
+	Public Model A
+		{
+			A a= New A():
+			
+			Int a[]={65}:
+
+				
+			Public Int Process show(Int a,A v)
+			{
+			
+				a= b*c/d-3<56+fn(c@fn(a+b<d[5+a+fn()])+b[5][9]):	
+				Looptill(a<3)
+                          {
+				If(a<3)
+				{
+					a++:
+				}
+				Else If(a<e)
+					{
+						a++:
+						If(a<3&&b<c-4||fn())
+						{
+							  a@void():
+						}
+						Else If(a<3)
+						{
+							void():
+						}
+						Else
+						{
+							Console("Hello"):
+						}	
+					}
+				Else If(a<3)
+				{
+					a++:
+				}
+				Else
+
+				{
+					Console("End"):
+    				}
+			   }
+			}			
+		}
+
+
+
+
+
+}
+
+
+	Public Model A
+		{
+			
+			Public Int Process show()
+			{
+				Looptill(a<3)
+                          {
+				If(a<3 || a>=b && a!=2 || a<=2)
+				{
+					a++:
+				}
+				Else If(a<e)
+					{
+						a++:
+						If(a<3)
+						{
+							  a@void():
+						}
+						Else If(a<3)
+						{
+							void():
+						}
+						Else
+						{
+							Console("Hello"):
+						}	
+					}
+				Else If(a<3)
+				{
+					a++:
+				}
+				Else
+
+				{
+
+					Console("End"):
+					Return New A ():
+    				}
+			   }
+			}			
+		}
+
+
+
+
+Terminate
+^

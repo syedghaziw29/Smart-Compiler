@@ -1,0 +1,119 @@
+# This is a sample Python code with 500 lines
+
+import random
+
+# Function to generate a random number
+def generate_random_number():
+    return random.randint(1, 100)
+
+# Function to check if a number is even or odd
+def is_even(number):
+    return number % 2 == 0
+
+# Function to calculate the factorial of a number
+def calculate_factorial(number):
+    if number == 0:
+        return 1
+    else:
+        return number * calculate_factorial(number - 1)
+
+# Function to find the maximum element in a list
+def find_maximum(numbers):
+    max_number = float('-inf')
+    for num in numbers:
+        if num > max_number:
+            max_number = num
+    return max_number
+
+# Function to find the minimum element in a list
+def find_minimum(numbers):
+    min_number = float('inf')
+    for num in numbers:
+        if num < min_number:
+            min_number = num
+    return min_number
+
+# Function to reverse a string
+def reverse_string(string):
+    return string[::-1]
+
+# Function to check if a string is a palindrome
+def is_palindrome(string):
+    reversed_string = reverse_string(string)
+    return string == reversed_string
+
+# Function to calculate the sum of a list of numbers
+def calculate_sum(numbers):
+    return sum(numbers)
+
+# Function to calculate the average of a list of numbers
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers)
+
+# Function to generate a list of random numbers
+def generate_random_list(length):
+    return [random.randint(1, 100) for _ in range(length)]
+
+# Function to sort a list of numbers in ascending order
+def sort_numbers(numbers):
+    return sorted(numbers)
+
+# Function to find the frequency of each element in a list
+def find_element_frequency(numbers):
+    frequency_dict = {}
+    for num in numbers:
+        if num in frequency_dict:
+            frequency_dict[num] += 1
+        else:
+            frequency_dict[num] = 1
+    return frequency_dict
+
+# Function to perform a linear search in a list
+def linear_search(numbers, target):
+    for index, num in enumerate(numbers):
+        if num == target:
+            return index
+    return -1
+
+# Function to perform a binary search in a sorted list
+def binary_search(numbers, target):
+    left = 0
+    right = len(numbers) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if numbers[mid] == target:
+            return mid
+        elif numbers[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+
+# Function to calculate the Fibonacci sequence up to a given number of terms
+def calculate_fibonacci_sequence(terms):
+    sequence = [0, 1]
+    while len(sequence) < terms:
+        next_number = sequence[-1] + sequence[-2]
+        sequence.append(next_number)
+    return sequence
+
+# Function to generate a random uppercase letter
+def generate_random_letter():
+    return chr(random.randint(65, 90))
+
+# Function to generate a random lowercase letter
+def generate_random_lowercase_letter():
+    return chr(random.randint(97, 122))
+
+# Function to generate a random string of a given length
+def generate_random_string(length):
+    random_string = ''
+    for _ in range(length):
+        random_string += generate_random_letter()
+    return random_string
+
+# Function to convert a decimal number to binary
+def decimal_to_binary(decimal):
+    return bin(decimal)[2:]
+
+# Function to convert a binary number

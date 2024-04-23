@@ -1,0 +1,299 @@
+# This is a sample Python code with 500 lines
+
+import random
+
+# Function to generate a random number
+def generate_random_number():
+    return random.randint(1, 100)
+
+# Function to check if a number is even or odd
+def is_even(number):
+    return number % 2 == 0
+
+# Function to calculate the factorial of a number
+def calculate_factorial(number):
+    if number == 0:
+        return 1
+    else:
+        return number * calculate_factorial(number - 1)
+
+# Function to find the maximum element in a list
+def find_maximum(numbers):
+    max_number = float('-inf')
+    for num in numbers:
+        if num > max_number:
+            max_number = num
+    return max_number
+
+# Function to find the minimum element in a list
+def find_minimum(numbers):
+    min_number = float('inf')
+    for num in numbers:
+        if num < min_number:
+            min_number = num
+    return min_number
+
+# Function to reverse a string
+def reverse_string(string):
+    return string[::-1]
+
+# Function to check if a string is a palindrome
+def is_palindrome(string):
+    reversed_string = reverse_string(string)
+    return string == reversed_string
+
+# Function to calculate the sum of a list of numbers
+def calculate_sum(numbers):
+    return sum(numbers)
+
+# Function to calculate the average of a list of numbers
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers)
+
+# Function to generate a list of random numbers
+def generate_random_list(length):
+    return [random.randint(1, 100) for _ in range(length)]
+
+# Function to sort a list of numbers in ascending order
+def sort_numbers(numbers):
+    return sorted(numbers)
+
+# Function to find the frequency of each element in a list
+def find_element_frequency(numbers):
+    frequency_dict = {}
+    for num in numbers:
+        if num in frequency_dict:
+            frequency_dict[num] += 1
+        else:
+            frequency_dict[num] = 1
+    return frequency_dict
+
+# Function to perform a linear search in a list
+def linear_search(numbers, target):
+    for index, num in enumerate(numbers):
+        if num == target:
+            return index
+    return -1
+
+# Function to perform a binary search in a sorted list
+def binary_search(numbers, target):
+    left = 0
+    right = len(numbers) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if numbers[mid] == target:
+            return mid
+        elif numbers[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+
+# Function to calculate the Fibonacci sequence up to a given number of terms
+def calculate_fibonacci_sequence(terms):
+    sequence = [0, 1]
+    while len(sequence) < terms:
+        next_number = sequence[-1] + sequence[-2]
+        sequence.append(next_number)
+    return sequence
+
+# Function to generate a random uppercase letter
+def generate_random_letter():
+    return chr(random.randint(65, 90))
+
+# Function to generate a random lowercase letter
+def generate_random_lowercase_letter():
+    return chr(random.randint(97, 122))
+
+# Function to generate a random string of a given length
+def generate_random_string(length):
+    random_string = ''
+    for _ in range(length):
+        random_string += generate_random_letter()
+    return random_string
+
+# Function to convert a decimal number to binary
+def decimal_to_binary(decimal):
+    return bin(decimal)[2:]
+
+# Function to convert a binary number to decimal
+def binary_to_decimal(binary):
+    return int(binary, 2)
+
+# Function to convert a decimal number to hexadecimal
+def decimal_to_hexadecimal(decimal):
+    return hex(decimal)[2:]
+
+# Function to convert a hexadecimal number to decimal
+def hexadecimal_to_decimal(hexadecimal):
+    return int(hexadecimal, 16)
+
+# Function to convert a string to uppercase
+def convert_to_uppercase(string):
+    return string.upper()
+
+# Function to convert a string to lowercase
+def convert_to_lowercase(string):
+    return string.lower()
+
+# Function to split a string into a list of words
+def split_string(string):
+    return string.split()
+
+# Function to join a list of words into a string
+def join_words(words):
+    return ' '.join(words)
+
+# Function to check if a string starts with a given prefix
+def starts_with(string, prefix):
+    return string.startswith(prefix)
+
+# Function to check if a string ends with a given suffix
+def ends_with(string, suffix):
+    return string.endswith(suffix)
+
+# Function to remove leading and trailing whitespace from a string
+def strip_whitespace(string):
+    return string.strip()
+
+# Function to replace all occurrences of a substring in a string
+def replace_substring(string, old_substring, new_substring):
+    return string.replace(old_substring, new_substring)
+
+# Function to count the number of occurrences of a substring in a string
+def count_substring(string, substring):
+    return string.count(substring)
+
+# Function to check if a string contains only digits
+def contains_only_digits(string):
+    return string.isdigit()
+
+# Function to check if a string contains only letters
+def contains_only_letters(string):
+    return string.isalpha()
+
+# Function to check if a string is alphanumeric
+def is_alphanumeric(string):
+    return string.isalnum()
+
+# Function to remove duplicates from a list
+def remove_duplicates(numbers):
+    return list(set(numbers))
+
+# Function to check if two lists are equal
+def are_lists_equal(list1, list2):
+    return list1 == list2
+
+# Function to reverse a list
+def reverse_list(numbers):
+    return numbers[::-1]
+
+# Function to shuffle a list
+def shuffle_list(numbers):
+    random.shuffle(numbers)
+    return numbers
+
+# Function to get the current date and time
+def get_current_datetime():
+    from datetime import datetime
+    return datetime.now()
+
+# Function to get the current year
+def get_current_year():
+    return get_current_datetime().year
+
+# Function to get the current month
+def get_current_month():
+    return get_current_datetime().month
+
+# Function to get the current day
+def get_current_day():
+    return get_current_datetime().day
+
+# Function to get the current hour
+def get_current_hour():
+    return get_current_datetime().hour
+
+# Function to get the current minute
+def get_current_minute():
+    return get_current_datetime().minute
+
+# Function to get the current second
+def get_current_second():
+    return get_current_datetime().second
+
+# Function to get the current weekday
+def get_current_weekday():
+    return get_current_datetime().weekday()
+
+# Function to print a countdown from a given number
+def countdown(number):
+    while number > 0:
+        print(number)
+        number -= 1
+    print("Go!")
+
+# Function to find the area of a rectangle
+def calculate_rectangle_area(length, width):
+    return length * width
+
+# Function to find the area of a triangle
+def calculate_triangle_area(base, height):
+    return 0.5 * base * height
+
+# Function to find the area of a circle
+def calculate_circle_area(radius):
+    return 3.14159 * radius ** 2
+
+# Function to find the perimeter of a rectangle
+def calculate_rectangle_perimeter(length, width):
+    return 2 * (length + width)
+
+# Function to find the perimeter of a triangle
+def calculate_triangle_perimeter(side1, side2, side3):
+    return side1 + side2 + side3
+
+# Function to find the circumference of a circle
+def calculate_circle_circumference(radius):
+    return 2 * 3.14159 * radius
+
+# Function to check if a year is a leap year
+def is_leap_year(year):
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+
+# Function to calculate the factorial of a number recursively
+def calculate_factorial_recursive(number):
+    if number == 0:
+        return 1
+    else:
+        return number * calculate_factorial_recursive(number - 1)
+def calculate_digit_sum(number):
+    digit_sum = 0
+    while number > 0:
+        digit = number % 10
+        digit_sum += digit
+        number //= 10
+    return digit_sum
+def calculate_digit_product(number):
+    digit_product = 1
+    while number > 0:
+        digit = number % 10
+        digit_product *= digit
+        number //= 10
+    return digit_product
+# Function to check if a number is a perfect number
+def is_perfect_number(number):
+    divisor_sum = 0
+    for i in range(1, number):
+        if number % i == 0:
+            divisor_sum += i
+    return divisor_sum == number
